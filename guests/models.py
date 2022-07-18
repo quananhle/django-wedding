@@ -31,7 +31,7 @@ class Party(models.Model):
     invitation_opened = models.DateTimeField(null=True, blank=True, default=None)
     is_invited = models.BooleanField(default=False)
     rehearsal_dinner = models.BooleanField(default=False)
-    is_attending = models.NullBooleanField(default=None)
+    is_attending = models.BooleanField(default=False)
     comments = models.TextField(null=True, blank=True)
 
     def __str__(self):
