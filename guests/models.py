@@ -70,7 +70,7 @@ class Guest(models.Model):
     first_name = models.TextField()
     last_name = models.TextField(null=True, blank=True)
     email = models.TextField(null=True, blank=True)
-    is_attending = models.NullBooleanField(default=None)
+    is_attending = models.BooleanField(default=False)
     meal = models.CharField(max_length=20, choices=MEALS, null=True, blank=True)
     is_child = models.BooleanField(default=False)
 
