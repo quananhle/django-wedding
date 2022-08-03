@@ -6,8 +6,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 class Home(LoginRequiredMixin, View):
     template = 'home.html'
-
-    print ('Test')
     def get(self, *args, **kwargs):
         context={
             'save_the_dates': SAVE_THE_DATE_CONTEXT_MAP,
@@ -17,6 +15,4 @@ class Home(LoginRequiredMixin, View):
             'wedding_location': settings.WEDDING_LOCATION,
             'wedding_date': settings.WEDDING_DATE,
         }
-        print ('Test')
-
         return render(self.request, self.template, context)
