@@ -2,7 +2,9 @@
 {% load static %}
 {% block page_head %}
     <!-- Custom CSS -->
+    <link href="{% static 'bigday/css/styles.min.css' %}" rel="stylesheet" >
     <link href="{% static 'bigday/css/creative.css' %}" rel="stylesheet">
+
 {% endblock %}
 {% block page_content %}
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -24,13 +26,13 @@
                         <a class="page-scroll" href="#main-header">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#event">Event</a>
+                        <a class="page-scroll" href="#event">Can Tho, Viet Nam </a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#niagara">Can Tho, Viet Nam & Ha Noi, Viet Nam</a>
+                        <a class="page-scroll" href="#niagara">Ha Noi, Viet Nam</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#other-stuff">Everything Else</a>
+                        <a class="page-scroll" href="#story">Our Story</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -91,7 +93,7 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    The Event
+                                    Can Tho, Viet Nam
                                 </div>
                             </div>
                         </div>
@@ -103,7 +105,7 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Can Tho, Viet Nam
+                                    Ha Noi, Viet Nam
                                 </div>
                             </div>
                         </div>
@@ -158,6 +160,16 @@
         </div>
     </section>
     {% endblock %}
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center content">
+                    <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                    <p>Crafted by Ram with lots of <span class="fa fa-heart pulse2"></span> for Antara</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 {% endblock %}
 {% block page_js %}
     <!-- Plugin JavaScript -->
@@ -167,4 +179,31 @@
     <script src="{% static 'creative/js/jquery.fittext.js' %}"></script>
     <!-- Custom Theme JavaScript -->
     <script src="{% static 'creative/js/creative.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="js/vendor/ouical.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-46465113-4', 'auto');
+        ga('send', 'pageview');
+    </script>
 {% endblock %}
