@@ -130,9 +130,9 @@
     <section id="niagara">
         {% include 'partials/niagara.html' %}
     </section>
-{% comment %}
+    {% comment %}
         {% include 'partials/wedding-party.html' %}
-{% endcomment %}
+    {% endcomment %}
     <section id="other-stuff" class="bg-primary">
         {% include 'partials/misc.html' %}
     </section>
@@ -142,34 +142,19 @@
     <section id="story" class="bg-dark">
         {% include 'partials/story.html' %}
     </section>
-    {% include 'partials/proposal.html' %}
+    <!-- {% include 'partials/proposal.html' %} -->
     {% include 'partials/save-the-dates.html' %}
-    <section id="contact" class="bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Contact us!</h2>
-                    <hr class="primary">
-                    <p>If you have any questions don't hesitate to reach out!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:{{ support_email }}">{{ support_email }}</a></p>
-                </div>
+    <section id="story">
+        <div class="row">
+            <div class="col-sm-12 text-center content">
+                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                <p>Crafted by Quan with lots of <span class="fa fa-heart pulse2" style="color: red;"></span> for Thu</p>
             </div>
         </div>
     </section>
+
     {% endblock %}
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center content">
-                    <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                    <p>Crafted by Ram with lots of <span class="fa fa-heart pulse2"></span> for Antara</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+
 {% endblock %}
 {% block page_js %}
     <!-- Plugin JavaScript -->
