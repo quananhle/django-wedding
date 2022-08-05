@@ -4,7 +4,6 @@
     <!-- Custom CSS -->
     <link href="{% static 'bigday/css/styles.min.css' %}" rel="stylesheet" >
     <link href="{% static 'bigday/css/creative.css' %}" rel="stylesheet">
-
 {% endblock %}
 {% block page_content %}
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -133,16 +132,12 @@
     {% comment %}
         {% include 'partials/wedding-party.html' %}
     {% endcomment %}
-    <section id="other-stuff" class="bg-primary">
-        {% include 'partials/misc.html' %}
-    </section>
-    <section id="gifts">
-        {% include 'partials/gifts.html' %}
-    </section>
-    <section id="story" class="bg-dark">
+    <section id="story" class="bg-dark" style="background-color: #000080;">
         {% include 'partials/story.html' %}
     </section>
-    <!-- {% include 'partials/proposal.html' %} -->
+    {% include 'partials/us-map.html' %}
+    <img src="{% static 'bigday/images/US-map.png' %}" class="img-responsive" alt="">
+    {% include 'partials/proposal.html' %}
     {% include 'partials/save-the-dates.html' %}
     <section id="story">
         <div class="row">
@@ -173,6 +168,7 @@
     <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="js/vendor/ouical.js"></script>
     <script src="js/scripts.min.js"></script>
+    <!-- <script src="{% static 'bigday/js/main.js' %}"></script> -->
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
     <!-- Google Analytics -->

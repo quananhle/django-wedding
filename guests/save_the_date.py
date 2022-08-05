@@ -13,13 +13,6 @@ from guests.models import Party
 
 SAVE_THE_DATE_TEMPLATE = 'guests/email_templates/save_the_date.html'
 SAVE_THE_DATE_CONTEXT_MAP = {
-        # 'lions-head': {
-        #     'title': "Lion's Head",
-        #     'header_filename': 'hearts.png',
-        #     'main_image': 'lions-head.jpg',
-        #     'main_color': '#fff3e8',
-        #     'font_color': '#666666',
-        # },
         'ski-trip': {
             'title': 'Ski Trip',
             'header_filename': 'hearts.png',
@@ -40,6 +33,13 @@ SAVE_THE_DATE_CONTEXT_MAP = {
             'main_image': 'american-gothic.jpg',
             'main_color': '#b6ccb5',
             'font_color': '#000000',
+        },
+        'lions-head': {
+            'title': "Lion's Head",
+            'header_filename': 'hearts.png',
+            'main_image': 'lions-head.jpg',
+            'main_color': '#fff3e8',
+            'font_color': '#666666',
         },
         'plunge': {
             'title': 'The Plunge',
