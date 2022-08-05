@@ -13,47 +13,82 @@ from guests.models import Party
 
 SAVE_THE_DATE_TEMPLATE = 'guests/email_templates/save_the_date.html'
 SAVE_THE_DATE_CONTEXT_MAP = {
-        'ski-trip': {
-            'title': 'Ski Trip',
-            'header_filename': 'hearts.png',
-            'main_image': 'ski-trip.jpg',
-            'main_color': '#330033',
-            'font_color': '#ffffff',
-        },
-        'canada': {
-            'title': 'Canada!',
-            'header_filename': 'maple-leaf.png',
-            'main_image': 'canada-cartoon-resized.jpg',
-            'main_color': '#ea2e2e',
-            'font_color': '#e5ddd9',
-        },
-        'american-gothic': {
-            'title': 'American Gothic',
-            'header_filename': 'hearts.png',
-            'main_image': 'american-gothic.jpg',
-            'main_color': '#b6ccb5',
-            'font_color': '#000000',
-        },
-        'lions-head': {
-            'title': "Lion's Head",
-            'header_filename': 'hearts.png',
-            'main_image': 'lions-head.jpg',
+        'blue-ridge-parkway': {
+            'title': 'Blue Ridge Parkway - North Carolina',
+            'header_filename': 'dove.png',
+            'main_image': 'BlueRidgeParkway-NC.jpg',
             'main_color': '#fff3e8',
-            'font_color': '#666666',
+            'font_color': '#ff0000',
         },
-        'plunge': {
-            'title': 'The Plunge',
-            'header_filename': 'plunger.png',
-            'main_image': 'plunge.jpg',
-            'main_color': '#b4e6ff',
-            'font_color': '#000000',
+        'chicago': {
+            'title': 'Chicago - Illinois',
+            'header_filename': 'couple.png',
+            'main_image': 'Chicago-IL.jpg',
+            'main_color': '#fff3e8',
+            'font_color': '#ff0000',
         },
-        'dimagi': {
-            'title': 'Dimagi',
-            'header_filename': 'commcare.png',
-            'main_image': 'join-us.jpg',
-            'main_color': '#003d71',
-            'font_color': '#d6d6d4',
+        'niagara': {
+            'title': "Niagara Falls - New York",
+            'header_filename': 'american-flag.png',
+            'main_image': 'Niagara-NY.jpg',
+            'main_color': '#fff3e8',
+            'font_color': '#ff0000',
+        },
+        'tampa': {
+            'title': 'Tampa - Florida',
+            'header_filename': 'wine.png',
+            'main_image': 'Tampa-FL.jpg',
+            'main_color': '#fff3e8',
+            'font_color': '#ff0000',
+        },
+        'white-mountains': {
+            'title': 'White Mountains - New Hampshire',
+            'header_filename': 'wedding-cake.png',
+            'main_image': 'WhiteMountain-NH.jpg',
+            'main_color': '#fff3e8',
+            'font_color': '#ff0000',
+        },
+        'colorado-springs': {
+            'title': 'Colorado Springs - Colorado',
+            'header_filename': 'double-happiness.png',
+            'main_image': 'ColoradoSprings-CO.jpg',
+            'main_color': '#fff3e8',
+            'font_color': '#ff0000',
+        },
+        # 'destin': {
+        #     'title': 'Destin - Florida',
+        #     'header_filename': 'wedding-arch.png',
+        #     'main_image': 'Destin-FL.jpg',
+        #     'main_color': '#fff3e8',
+        #     'font_color': '#ff0000',
+        # },
+        # 'destin-1': {
+        #     'title': 'Destin - Florida',
+        #     'header_filename': 'wedding-arch.png',
+        #     'main_image': 'Destin-FL-1.jpg',
+        #     'main_color': '#fff3e8',
+        #     'font_color': '#ff0000',
+        # },
+        'rapid-city': {
+            'title': 'Rapid City - South Dakota',
+            'header_filename': 'wedding-arch.png',
+            'main_image': 'RapidCity-SD.jpg',
+            'main_color': '#fff3e8',
+            'font_color': '#ff0000',
+        },
+        'big-sur': {
+            'title': 'Big Sur - California',
+            'header_filename': 'wedding-rings.png',
+            'main_image': 'BigSur-CA.jpg',
+            'main_color': '#fff3e8',
+            'font_color': '#ff0000',
+        },
+        'portland': {
+            'title': 'Portland - Maine',
+            'header_filename': 'just-married.png',
+            'main_image': 'Portland-ME.jpg',
+            'main_color': '#fff3e8',
+            'font_color': '#ff0000',
         }
     }
 
