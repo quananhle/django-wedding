@@ -60,7 +60,7 @@
             </div>
         </div>
     </header>
-    <section class="bg-info" id="welcome">
+    <section class="bg-info" id="welcome" style="background-color: #0abab5; font-size: 25px; font-weight: 600;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -70,12 +70,12 @@
                         Hello friends and family! It's the week of the wedding!
                     </p>
                     <p>
-                        If you're looking for information about the event, look no further!
-                        Please see below for all the details regarding <a href="#engagement-event" class="page-scroll">Saturday 09/03/22's Engegament Ceremony</a> and <a href="#wedding-event" class="page-scroll">Saturday 09/10/22's Wedding Ceremony</a>.
+                        If you're looking for information about the event, look no further!<br>
+                        Please see below for all the details regarding <br><a href="#engagement-event" class="page-scroll" style="color: yellow;">Saturday 09/03/22's Engegament Ceremony</a> & <a href="#wedding-event" class="page-scroll" style="color: yellow;">Saturday 09/10/22's Wedding Ceremony</a>.
                     </p>
                     <p>
                         To get added to the wedding whatsapp group first create an account and then send an
-                        email to <a href="mailto:{{ support_email }}">{{ support_email }}</a>.
+                        email to <a href="mailto:{{ support_email }}" style="color: yellow;">{{ support_email }}</a>.
                         Also, the current front-runner for the wedding hashtag (if you're into that sort of thing) is #getlukky.
                     </p>
                     <p>
@@ -91,6 +91,7 @@
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="#engagement-event" class="portfolio-box page-scroll">
+                        <!-- <img src="{% static 'bigday/images/Destin-FL-1.jpg' %}" class="img-responsive" alt=""> -->
                         <img src="{% static 'bigday/images/Destin-FL-1.jpg' %}" class="img-responsive-navigation" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -103,6 +104,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#niagara" class="portfolio-box page-scroll">
+                        <!-- <img src="{% static 'bigday/images/Destin-FL.jpg' %}" class="img-responsive" alt=""> -->
                         <img src="{% static 'bigday/images/Destin-FL.jpg' %}" class="img-responsive-navigation" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -115,6 +117,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#story" class="portfolio-box page-scroll">
+                        <!-- <img src="{% static 'bigday/images/MountRushmore-SD.png' %}" class="img-responsive" alt=""> -->
                         <img src="{% static 'bigday/images/MountRushmore-SD.png' %}" class="img-responsive-navigation" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -132,19 +135,20 @@
     <section id="niagara" style="background-color: #f7f0e5;">
         {% include 'partials/niagara.html' %}
     </section>
-    <img src="{% static 'bigday/images/US-Map.png' %}" class="img-responsive" style="width: 100%;" alt="">
     {% comment %}
         {% include 'partials/wedding-party.html' %}
     {% endcomment %}
     {% include 'partials/proposal.html' %}
-    {% include 'partials/save-the-dates.html' %}
-    <section id="story" class="bg-dark" style="background-color: #f7f0e5;">
+    {% include 'partials/us-map.html' %}
+
+    <section id="story" class="bg-dark" style="background-color: #000080;">
         {% include 'partials/story.html' %}
     </section>
+    {% include 'partials/save-the-dates.html' %}
 
     <!-- style="background-color: #000080; -->
 
-    {% include 'partials/us-map.html' %}
+    <img src="{% static 'bigday/images/US-Map.png' %}" class="img-responsive" style="width: 100%;" alt="">
     <section id="story">
         <div class="row">
             <div class="col-sm-12 text-center content">
