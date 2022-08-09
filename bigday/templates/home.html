@@ -86,14 +86,25 @@
             </div>
         </div>
     </section>
+
     <section class="no-padding" id="navigation">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#engagement-event" class="portfolio-box page-scroll">
-                        <!-- <img src="{% static 'bigday/images/Destin-FL-1.jpg' %}" class="img-responsive" alt=""> -->
-                        <!-- <img src="{% static 'bigday/images/Destin-FL-1.jpg' %}" class="img-responsive-navigation" alt=""> -->
-                        <img src="{% static 'bigday/images/TheBean-IL.jpg' %}" class="img-responsive-navigation" alt="">
+                    <a href="#third-header" class="portfolio-box page-scroll">
+                        <img src="{% static 'bigday/images/TheBean-IL.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Our Journey
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#second-header" class="portfolio-box page-scroll">
+                        <img src="{% static 'bigday/images/Manhattan-NY.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
@@ -104,27 +115,12 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#niagara" class="portfolio-box page-scroll">
-                        <!-- <img src="{% static 'bigday/images/Destin-FL.jpg' %}" class="img-responsive" alt=""> -->
-                        <!-- <img src="{% static 'bigday/images/Destin-FL.jpg' %}" class="img-responsive-navigation" alt=""> -->
-                        <img src="{% static 'bigday/images/Manhattan-NY.jpg' %}" class="img-responsive-navigation" alt="">
+                    <a href="#story" class="portfolio-box page-scroll">
+                        <img src="{% static 'bigday/images/Boston-MA.JPG' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
                                     Our Story
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#story" class="portfolio-box page-scroll">
-                        <!-- <img src="{% static 'bigday/images/MountRushmore-SD.png' %}" class="img-responsive" alt=""> -->
-                        <img src="{% static 'bigday/images/MountRushmore-SD.png' %}" class="img-responsive-navigation" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Our Journey
                                 </div>
                             </div>
                         </div>
@@ -141,31 +137,40 @@
     {% comment %}
         {% include 'partials/wedding-party.html' %}
     {% endcomment %}
-
     {% include 'partials/journey.html' %}
     {% include 'partials/proposal.html' %}
-    {% include 'partials/us-map.html' %}
-
     <section id="story" class="bg-dark" style="background-color: #000080;">
         {% include 'partials/story.html' %}
     </section>
+    {% include 'partials/us-map.html' %}
+
     {% include 'partials/save-the-dates.html' %}
-
-    <!-- style="background-color: #000080; -->
-
     <img src="{% static 'bigday/images/US-Map.png' %}" class="img-responsive" style="width: 100%;" alt="">
     <section id="story">
-        <div class="row">
-            <div class="col-sm-12 text-center content">
-                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Crafted by Quan with lots of <span class="fa fa-heart pulse2" style="color: red;"></span> for Thu</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center content">
+                    <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                    <p>Crafted by Quan with lots of <span class="fa fa-heart pulse2" style="color: red;"></span> for Thu</p>
+                </div>
             </div>
         </div>
     </section>
 
     {% endblock %}
-
+<style>
+    ::-moz-selection {
+        color: gold;
+        background: navy;
+    }
+    ::selection {
+        color: gold;
+        background: navy;
+    }
+</style>
 {% endblock %}
+
+
 {% block page_js %}
     <!-- Plugin JavaScript -->
     <!-- Easing is for the vertical scroll animations -->

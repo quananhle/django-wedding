@@ -18,78 +18,64 @@ SAVE_THE_DATE_CONTEXT_MAP = {
             'header_filename': 'dove.png',
             'main_image': 'BlueRidgeParkway-NC.jpg',
             'main_color': '#fff3e8',
-            'font_color': '#ff0000',
+            'font_color': '#ff0000'
         },
         'chicago': {
             'title': 'Chicago - Illinois',
             'header_filename': 'couple.png',
             'main_image': 'Chicago-IL.jpg',
             'main_color': '#fff3e8',
-            'font_color': '#ff0000',
+            'font_color': '#ff0000'
         },
         'niagara': {
             'title': "Niagara Falls - New York",
             'header_filename': 'american-flag.png',
             'main_image': 'Niagara-NY.jpg',
             'main_color': '#fff3e8',
-            'font_color': '#ff0000',
+            'font_color': '#ff0000'
         },
         'tampa': {
             'title': 'Tampa - Florida',
             'header_filename': 'wine.png',
             'main_image': 'Tampa-FL.jpg',
             'main_color': '#fff3e8',
-            'font_color': '#ff0000',
+            'font_color': '#ff0000'
         },
         'white-mountains': {
             'title': 'White Mountains - New Hampshire',
             'header_filename': 'wedding-cake.png',
             'main_image': 'WhiteMountain-NH.jpg',
             'main_color': '#fff3e8',
-            'font_color': '#ff0000',
+            'font_color': '#ff0000'
         },
         'colorado-springs': {
             'title': 'Colorado Springs - Colorado',
             'header_filename': 'double-happiness.png',
             'main_image': 'ColoradoSprings-CO.jpg',
             'main_color': '#fff3e8',
-            'font_color': '#ff0000',
+            'font_color': '#ff0000'
         },
-        # 'destin': {
-        #     'title': 'Destin - Florida',
-        #     'header_filename': 'wedding-arch.png',
-        #     'main_image': 'Destin-FL.jpg',
-        #     'main_color': '#fff3e8',
-        #     'font_color': '#ff0000',
-        # },
-        # 'destin-1': {
-        #     'title': 'Destin - Florida',
-        #     'header_filename': 'wedding-arch.png',
-        #     'main_image': 'Destin-FL-1.jpg',
-        #     'main_color': '#fff3e8',
-        #     'font_color': '#ff0000',
-        # },
         'rapid-city': {
             'title': 'Rapid City - South Dakota',
             'header_filename': 'wedding-arch.png',
             'main_image': 'RapidCity-SD.jpg',
             'main_color': '#fff3e8',
-            'font_color': '#ff0000',
+            'font_color': '#ff0000'
         },
         'big-sur': {
             'title': 'Big Sur - California',
             'header_filename': 'wedding-rings.png',
             'main_image': 'BigSur-CA.jpg',
             'main_color': '#fff3e8',
-            'font_color': '#ff0000',
+            'font_color': '#ff0000'
         },
         'portland': {
             'title': 'Portland - Maine',
             'header_filename': 'just-married.png',
             'main_image': 'Portland-ME.jpg',
             'main_color': '#fff3e8',
-            'font_color': '#ff0000',
-        }
+            'font_color': '#ff0000'
+        },
     }
 
 
