@@ -23,3 +23,10 @@ def hanoi(request):
     if request.method == 'GET':     
         context = {}
         return render(request, template, context)
+
+def engagement(request):
+    template = 'partials/engagement.html'
+    if request.method == 'GET':     
+        context = {}
+        return render(request, template, context)
+        
