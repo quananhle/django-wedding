@@ -27,10 +27,10 @@ SAVE_THE_DATE_CONTEXT_MAP = {
             'main_color': '#fff3e8',
             'font_color': '#ff0000'
         },
-        'niagara': {
-            'title': "Niagara Falls - New York",
-            'header_filename': 'american-flag.png',
-            'main_image': 'Niagara-NY.jpg',
+        'colorado-springs': {
+            'title': 'Colorado Springs - Colorado',
+            'header_filename': 'double-happiness.png',
+            'main_image': 'ColoradoSprings-CO.jpg',
             'main_color': '#fff3e8',
             'font_color': '#ff0000'
         },
@@ -41,24 +41,38 @@ SAVE_THE_DATE_CONTEXT_MAP = {
             'main_color': '#fff3e8',
             'font_color': '#ff0000'
         },
+        'nyc': {
+            'title': "Manhattan - New York",
+            'header_filename': 'american-flag.png',
+            'main_image': 'Manhattan-NY.jpg',
+            'main_color': '#fff3e8',
+            'font_color': '#ff0000'
+        },
         'white-mountains': {
             'title': 'White Mountains - New Hampshire',
             'header_filename': 'wedding-cake.png',
-            'main_image': 'WhiteMountain-NH.jpg',
+            'main_image': 'WhiteMountains-3-NH.jpg',
             'main_color': '#fff3e8',
             'font_color': '#ff0000'
         },
-        'colorado-springs': {
-            'title': 'Colorado Springs - Colorado',
-            'header_filename': 'double-happiness.png',
-            'main_image': 'ColoradoSprings-CO.jpg',
-            'main_color': '#fff3e8',
-            'font_color': '#ff0000'
-        },
-        'rapid-city': {
-            'title': 'Rapid City - South Dakota',
-            'header_filename': 'wedding-arch.png',
-            'main_image': 'RapidCity-SD.jpg',
+        # 'niagara': {
+        #     'title': "Niagara Falls - New York",
+        #     'header_filename': 'american-flag.png',
+        #     'main_image': 'Niagara-NY.jpg',
+        #     'main_color': '#fff3e8',
+        #     'font_color': '#ff0000'
+        # },
+        # 'boston': {
+        #     'title': "Boston - Massachussetts",
+        #     'header_filename': 'just-married.png',
+        #     'main_image': 'Boston-1-MA.jpg',
+        #     'main_color': '#fff3e8',
+        #     'font_color': '#ff0000'
+        # },
+        'seattle': {
+            'title': 'Seattle - Washington',
+            'header_filename': 'wedding-cake.png',
+            'main_image': 'Seattle-WA.jpg',
             'main_color': '#fff3e8',
             'font_color': '#ff0000'
         },
@@ -69,13 +83,27 @@ SAVE_THE_DATE_CONTEXT_MAP = {
             'main_color': '#fff3e8',
             'font_color': '#ff0000'
         },
-        'portland': {
-            'title': 'Portland - Maine',
-            'header_filename': 'just-married.png',
-            'main_image': 'Portland-ME.jpg',
+        'new-orleans': {
+            'title': 'New Orleans - Louisiana',
+            'header_filename': 'wedding-arch.png',
+            'main_image': 'NewOrleans-LA.jpg',
             'main_color': '#fff3e8',
             'font_color': '#ff0000'
         },
+        # 'rapid-city': {
+        #     'title': 'Rapid City - South Dakota',
+        #     'header_filename': 'wedding-arch.png',
+        #     'main_image': 'RapidCity-SD.jpg',
+        #     'main_color': '#fff3e8',
+        #     'font_color': '#ff0000'
+        # },
+        # 'portland': {
+        #     'title': 'Portland - Maine',
+        #     'header_filename': 'just-married.png',
+        #     'main_image': 'Portland-ME.jpg',
+        #     'main_color': '#fff3e8',
+        #     'font_color': '#ff0000'
+        # }
     }
 
 

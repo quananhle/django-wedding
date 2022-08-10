@@ -1,3 +1,4 @@
+from tempfile import tempdir
 from django.conf import settings
 from django.shortcuts import render
 from guests.save_the_date import SAVE_THE_DATE_CONTEXT_MAP
@@ -16,3 +17,9 @@ class Home(LoginRequiredMixin, View):
             'wedding_date': settings.WEDDING_DATE,
         }
         return render(self.request, self.template, context)
+
+def hanoi(request):
+    template = 'niagra.html'
+    if request.method == 'GET':     
+        context = {}
+        return render(request, template, context)
