@@ -1,11 +1,12 @@
 <section id="hanoi" style="background-color: #f7f0e5;">
     {% extends "home.html" %}
     {% load static %}
+    <title>{{ couple_name }}'s big day</title>
+    <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
     {% block page_head %}
         <!-- Custom CSS -->
         <link href="{% static 'bigday/css/styles.min.css' %}" rel="stylesheet" >
         <link href="{% static 'bigday/css/creative.css' %}" rel="stylesheet">
-        <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
     {% endblock %}
     {% block page_content %}
     <div class="container">
@@ -113,5 +114,5 @@
             </div>
         </div>
     </div>
+    {% endblock %}
 </section>
-{% endblock %}
