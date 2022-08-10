@@ -1,25 +1,7 @@
-from tempfile import tempdir
-from django.conf import settings
 from django.shortcuts import render
-from guests.save_the_date import SAVE_THE_DATE_CONTEXT_MAP
-from django.views import View
-from django.contrib.auth.mixins import LoginRequiredMixin
 
-class Home(LoginRequiredMixin, View):
-    template = 'home.html'
-    def get(self, *args, **kwargs):
-        context={
-            'save_the_dates': SAVE_THE_DATE_CONTEXT_MAP,
-            'support_email': settings.DEFAULT_WEDDING_REPLY_EMAIL,
-            'website_url': settings.WEDDING_WEBSITE_URL,
-            'couple_name': settings.BRIDE_AND_GROOM,
-            'wedding_location': settings.WEDDING_LOCATION,
-            'wedding_date': settings.WEDDING_DATE,
-        }
-        return render(self.request, self.template, context)
-
-def hanoi(request):
-    template = 'hanoi.html'
-    if request.method == 'GET':     
+def index(request):
+    template = 'index.html'
+    if request.method == 'GET':
         context = {}
         return render(request, template, context)
