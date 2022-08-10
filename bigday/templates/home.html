@@ -28,7 +28,7 @@
                         <a class="page-scroll" href="#engagement-event">Can Tho, Viet Nam </a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#niagara">Ha Noi, Viet Nam</a>
+                        <a class="page-scroll" href="#wedding-event">Ha Noi, Viet Nam</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#story">Our Story</a>
@@ -131,22 +131,20 @@
     </section>
 
     {% include 'partials/event.html' %}
+    {% include 'partials/save-the-dates.html' %}
+    <section id="story" class="bg-dark" style="background-color: #000080;">
+        {% include 'partials/story.html' %}
+    </section>
     {% comment %}
     <section id="niagara" style="background-color: #f7f0e5;">
         {% include 'partials/niagara.html' %}
     </section>
+    {% include 'partials/wedding-party.html' %}
     {% endcomment %}
-    {% comment %}
-        {% include 'partials/wedding-party.html' %}
-    {% endcomment %}
+
     {% include 'partials/journey.html' %}
     {% include 'partials/proposal.html' %}
-    <section id="story" class="bg-dark" style="background-color: #000080;">
-        {% include 'partials/story.html' %}
-    </section>
     {% include 'partials/us-map.html' %}
-
-    {% include 'partials/save-the-dates.html' %}
     <img src="{% static 'bigday/images/US-Map.png' %}" class="img-responsive" style="width: 100%;" alt="">
     <section id="story">
         <div class="container">
@@ -160,16 +158,16 @@
     </section>
 
     {% endblock %}
-<style>
-    ::-moz-selection {
-        color: gold;
-        background: navy;
-    }
-    ::selection {
-        color: gold;
-        background: navy;
-    }
-</style>
+    <style>
+        ::-moz-selection {
+            color: gold;
+            background: navy;
+        }
+        ::selection {
+            color: gold;
+            background: navy;
+        }
+    </style>
 {% endblock %}
 
 

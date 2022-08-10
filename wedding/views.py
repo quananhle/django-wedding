@@ -19,7 +19,7 @@ class Home(LoginRequiredMixin, View):
         return render(self.request, self.template, context)
 
 def hanoi(request):
-    template = 'niagra.html'
+    template = 'hanoi.html'
     if request.method == 'GET':     
         context = {}
         return render(request, template, context)
