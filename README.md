@@ -3,11 +3,11 @@
 Live site examples:
 
 - [Standard Wedding Website](http://rowena-and.coryzue.com/)
-- [Random Save The Date Email](http://rowena-and.coryzue.com/save-the-date/) (refresh for more examples)
-- [Sample Personal Invitation Page](http://rowena-and.coryzue.com/invite/b2ad24ec5dbb4694a36ef4ab616264e0/)
+<!-- - [Random Save The Date Email](http://rowena-and.coryzue.com/save-the-date/) (refresh for more examples)
+- [Sample Personal Invitation Page](http://rowena-and.coryzue.com/invite/b2ad24ec5dbb4694a36ef4ab616264e0/) -->
 
-There is also [a longer writeup on this project here](https://www.placecard.me/blog/django-wedding-website/).
-
+<!-- There is also [a longer writeup on this project here](https://www.placecard.me/blog/django-wedding-website/).
+ -->
 ## What's included?
 
 This includes everything we did for our own wedding:
