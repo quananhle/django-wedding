@@ -3,11 +3,11 @@
 Live site examples:
 
 - [Standard Wedding Website](http://rowena-and.coryzue.com/)
-- [Random Save The Date Email](http://rowena-and.coryzue.com/save-the-date/) (refresh for more examples)
-- [Sample Personal Invitation Page](http://rowena-and.coryzue.com/invite/b2ad24ec5dbb4694a36ef4ab616264e0/)
+<!-- - [Random Save The Date Email](http://rowena-and.coryzue.com/save-the-date/) (refresh for more examples)
+- [Sample Personal Invitation Page](http://rowena-and.coryzue.com/invite/b2ad24ec5dbb4694a36ef4ab616264e0/) -->
 
-There is also [a longer writeup on this project here](https://www.placecard.me/blog/django-wedding-website/).
-
+<!-- There is also [a longer writeup on this project here](https://www.placecard.me/blog/django-wedding-website/).
+ -->
 ## What's included?
 
 This includes everything we did for our own wedding:
@@ -32,8 +32,6 @@ It is completely customizable to your needs and the content is laid out in stand
 - A photo/hover navigation pane
 - Configurable content sections for every aspect of your site that you want
 - A set of different styles you can use for different sections
-
-![Hero Section of Wedding Website](https://raw.githubusercontent.com/czue/django-wedding-website/master/screenshots/hero-page.png)
 
 ### Guest management
 
@@ -85,8 +83,6 @@ has to respond, people who haven't selected a meal, etc.
 It's a great way of tracking your big picture numbers in terms of how many guests to expect.
 
 Just access `/dashboard/` from an account with admin access. Your other guests won't be able to see it.
-
-![Wedding Dashboard](https://raw.githubusercontent.com/czue/django-wedding-website/master/screenshots/wedding-dashboard.png)
 
 ### Other details
 
