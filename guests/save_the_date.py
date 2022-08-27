@@ -83,13 +83,13 @@ SAVE_THE_DATE_CONTEXT_MAP = {
             'main_color': '#fff3e8',
             'font_color': '#ff0000'
         },
-        'new-orleans': {
-            'title': 'New Orleans - Louisiana',
-            'header_filename': 'wedding-arch.png',
-            'main_image': 'NewOrleans-LA.jpg',
-            'main_color': '#fff3e8',
-            'font_color': '#ff0000'
-        },
+        # 'new-orleans': {
+        #     'title': 'New Orleans - Louisiana',
+        #     'header_filename': 'wedding-arch.png',
+        #     'main_image': 'NewOrleans-LA.jpg',
+        #     'main_color': '#fff3e8',
+        #     'font_color': '#ff0000'
+        # },
         # 'rapid-city': {
         #     'title': 'Rapid City - South Dakota',
         #     'header_filename': 'wedding-arch.png',
@@ -104,6 +104,13 @@ SAVE_THE_DATE_CONTEXT_MAP = {
         #     'main_color': '#fff3e8',
         #     'font_color': '#ff0000'
         # }
+        'boston': {
+            'title': 'Stoneham - Massachussetts',
+            'header_filename': 'wedding-arch.png',
+            'main_image': 'Boston-MA.jpg',
+            'main_color': '#fff3e8',
+            'font_color': '#ff0000'
+        }
     }
 
 
