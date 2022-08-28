@@ -38,7 +38,7 @@ def wedding(request):
         return render(request, template, context)
                 
 def save_the_date(request):
-    template = 'partials/story.html'
+    template = 'partials/misc.html'
     if request.method == 'GET':     
         context = {}
         return render(request, template, context)                

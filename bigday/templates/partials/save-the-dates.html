@@ -16,7 +16,7 @@
         <div class="row no-gutter">
             {% for key, context in save_the_dates.items %}
             <div class="col-lg-4 col-sm-6">
-                <a href="{% url 'save-the-date' key %}" target="_blank" class="portfolio-box page-scroll">
+                <a href="{% url 'save-the-dates-photos' %}" target="_blank" class="portfolio-box page-scroll">
                     {% with "save-the-date/images/"|add:context.main_image as main_static_url %}
                     <img src="{% static main_static_url %}" class="img-responsive center-block img-circle" alt="{{ context.title }}">
                     {% endwith %}
