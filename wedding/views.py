@@ -30,3 +30,10 @@ def engagement(request):
         context = {}
         return render(request, template, context)
         
+
+def wedding(request):
+    template = 'partials/wedding-party.html'
+    if request.method == 'GET':     
+        context = {}
+        return render(request, template, context)
+                
