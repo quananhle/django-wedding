@@ -26,7 +26,7 @@ def hanoi(request):
 
 def cantho(request):
     template = 'cantho.html'
-    if request.method == 'GET':     
+    if request.method == 'GET':
         context = {}
         return render(request, template, context)        
 
