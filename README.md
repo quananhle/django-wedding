@@ -10,6 +10,9 @@ Username
 Password = Personal Access Token
 ```
 
+Deploy an existing Django project on PythonAnywhere
+https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/
+
 <!-- # A Django Wedding Website and Invitation + Guest Management System
 
 Live site examples:
