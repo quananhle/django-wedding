@@ -16,6 +16,9 @@ https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/
 How to set up an HTTPS/SSL certificate for a custom domain
 https://help.pythonanywhere.com/pages/HTTPSSetup
 
+Forcing HTTPS
+https://help.pythonanywhere.com/pages/ForcingHTTPS
+
 <!-- # A Django Wedding Website and Invitation + Guest Management System
 
 Live site examples:
