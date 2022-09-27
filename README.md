@@ -1,8 +1,8 @@
-# A Django Wedding Website and Invitation + Guest Management System
+<!-- # A Django Wedding Website and Invitation + Guest Management System
 
 Live site examples:
 
-- [Standard Wedding Website](http://rowena-and.coryzue.com/)
+- [Standard Wedding Website](http://rowena-and.coryzue.com/) -->
 <!-- - [Random Save The Date Email](http://rowena-and.coryzue.com/save-the-date/) (refresh for more examples)
 - [Sample Personal Invitation Page](http://rowena-and.coryzue.com/invite/b2ad24ec5dbb4694a36ef4ab616264e0/) -->
 
@@ -122,6 +122,7 @@ is a good starting place for learning how to connect to a real mail service.
 To customize the email addresses, see the `DEFAULT_WEDDING_FROM_EMAIL` and
 `DEFAULT_WEDDING_REPLY_EMAIL` variables in `settings.py`.
 
+<!-- 
 ### Other customizations
 
 If you want to use this project for your wedding but need help getting started just [get in touch](http://www.coryzue.com/contact/) or make an issue
@@ -130,4 +131,4 @@ for anything you encounter and I'm happy to help.
 I haven't built out more complete customization docs yet because I wasn't sure anyone would be interested in this,
 but will add to these instructions whenever I get questions!
 
--Cory
+-Cory -->
