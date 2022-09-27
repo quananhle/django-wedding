@@ -1,3 +1,15 @@
+```{Bash}
+$ git add .
+$ git commit -m "Commit code"
+$ git pull
+$ git push
+```
+
+```
+Username
+Password = Personal Access Token
+```
+
 <!-- # A Django Wedding Website and Invitation + Guest Management System
 
 Live site examples:
