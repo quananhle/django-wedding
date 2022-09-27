@@ -1,4 +1,4 @@
-# A Django Wedding Website and Invitation + Guest Management System
+<!-- # A Django Wedding Website and Invitation + Guest Management System
 
 Live site examples:
 
@@ -130,4 +130,4 @@ for anything you encounter and I'm happy to help.
 I haven't built out more complete customization docs yet because I wasn't sure anyone would be interested in this,
 but will add to these instructions whenever I get questions!
 
--Cory
+-Cory -->
