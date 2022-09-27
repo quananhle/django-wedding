@@ -13,6 +13,9 @@ Password = Personal Access Token
 Deploy an existing Django project on PythonAnywhere
 https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/
 
+How to set up an HTTPS/SSL certificate for a custom domain
+https://help.pythonanywhere.com/pages/HTTPSSetup
+
 <!-- # A Django Wedding Website and Invitation + Guest Management System
 
 Live site examples:
