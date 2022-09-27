@@ -1,7 +1,6 @@
+{% load static %}
 <!doctype html>
-<section id="hanoi" style="background-color: #f7f0e5;">
-    {% extends "home.html" %}
-    {% load static %}
+<section id="hanoi" style="background-color: ##F5F5F5;">
     <!--[if lt IE 7]>
     <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
     <!--[if IE 7]>
@@ -21,131 +20,620 @@
             <meta property="og:description" content="We would like to invite you to our big day.">
             <meta property="og:type" content="website">
             <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
-            <link rel="manifest" href="manifest.json">
+            <!-- <link rel="manifest" href="manifest.json"> -->
             <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-            <link rel="stylesheet" href="{% static 'test-fancybox-youtube/css/normalize.min.css' %}">
-            <link rel="stylesheet" href="{% static 'test-fancybox-youtube/css/bootstrap.min.css' %}">
-            <link rel="stylesheet" href="{% static 'test-fancybox-youtube/css/jquery.fancybox.css' %}">
-            <link rel="stylesheet" href="{% static 'test-fancybox-youtube/css/flexslider.css' %}">
-            <link rel="stylesheet" href="{% static 'test-fancybox-youtube/css/styles.min.css' %}">
-            <link rel="stylesheet" href="{% static 'test-fancybox-youtube/css/queries.css' %}">
-            <link rel="stylesheet" href="{% static 'test-fancybox-youtube/node_modules/animate.css/animate.min.css' %}">
-            <link rel="stylesheet" href="{% static 'test-fancybox-youtube/node_modules/font-awesome/css/font-awesome.min.css' %}">
-            <script src="{% static 'test-fancybox-youtube/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/css/normalize.min.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/css/bootstrap.min.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/css/jquery.fancybox.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/css/flexslider.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/css/styles.min.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/css/queries.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/node_modules/animate.css/animate.min.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/node_modules/font-awesome/css/font-awesome.min.css' %}">
+            <script src="{% static 'fancybox-youtube-player/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
         </head>
-        {% block page_content %}
+    {% block page_content %}
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top"  style="background-color: darkslategray">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="{% url 'home' %}" style="color: gold;">Quan & Thu's Big Day</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li>
+                            <a class="page-scroll" href="{% url 'home' %}" style="color: white;">Home</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#where-to-stay" style="color: white;">Where To Stay </a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#eat-n-drink" style="color: white;">Eat and Drink</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#things-to-do" style="color: white;">Things To Do</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#halong" style="color: white;">Ha Long Bay</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br><br>
+        {% block main %}
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="section-heading text-center">Hà Nội</h2>
-                    <section id="video-bg" class="hidden-sm hidden-xs">
-                        <div id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/9giqL1H6yRs',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}"></div>
-                        <div id="video-content">
-                            <h5>Hà Nội</h5>
-                            <p>City of </p>
-                        </div>
-                    </section>
+
                     <img src="{% static 'bigday/images/hanoi.jpg' %}" class="img-responsive" style="width: 100%;" alt="">
                     <hr class="primary">
-                    <h3>Getting There and Away</h3>
-                    <p>State Guest House is located in the center of the city, few minute walking from the hictoric Hoàn Kiếm Lake and the Old Town.</p>
+                    <h3  id="hanoi">Getting There and Away</h3>
+                    <p>We have booked a 29 seat shuttle bus to transport our family from and to the airport.</p>
+
                     <hr class="primary">
-                    <h3>Where to Stay</h3>
-                    <p>
-                        Below is a brief list of recommendations on places to stay in Niagara-on-the-Lake.
-                        It is Canada Day weekend - a big deal! - so we do recommend reserving your accommodation early.
-                        Cory and Ro will be staying in the town of Niagara-on-the-Lake, which is a great option if you can find a rental or B&B, though unfortunately it doesn't have a lot of big hotels.
-                    </p>
-                    <p>We will provide one shuttle from Hilton Garden Inn and a second shuttle from the town of Niagara-on-the-Lake to the venue.
-                    </p>
+                    <h3  id="where-to-stay">Where to Stay</h3>
                     <table class="table table-striped">
                         <tr>
-                            <th class="col-md-2">Hilton Garden Inn</th>
+                            <th class="col-md-3">Golden Lotus Hanoi Hotel</th>
                             <td>
-                                The <a href="http://hiltongardeninn3.hilton.com/en/hotels/ontario/hilton-garden-inn-niagara-on-the-lake-XLVNLGI/index.html">Hilton Garden Inn</a> is conveniently located just off the highway and very close to the wedding venue.
-                                It is about a 20 minute drive to downtown Niagara-on-the-Lake.
-                                We have a block of discounted rooms reserved there - use the code <code>LZW16</code> to get the group discount.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>White Oaks Resort</th>
-                            <td>
-                                The White Oaks is very close to - and similar to - the Hilton Garden Inn.
-                                We were unable to get a group rate so just make a normal booking through <a href="http://www.whiteoaksresort.com/index.html">their website</a>.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Hotels/Bed and Breakfasts in Town</th>
-                            <td>
-                                There are a large number of smaller hotels and B&B's in and around downtown Niagara-on-the-Lake.
-                                We recommend just jumping on <a href="https://www.tripadvisor.co.za/Hotels-g154999-Niagara_on_the_Lake_Ontario-Hotels.html">trip advisor</a>, <a href="http://www.bedandbreakfast.com/niagara-on-the-lake-ontario.html">bedandbreakfast.com</a> or your favorite travel website and choosing a place.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Vacation rentals</th>
-                            <td>
-                                Both <a href="https://www.vrbo.com/">VRBO</a> and <a href="https://www.airbnb.com/">airbnb</a> have a number of vacation rentals in the area.
-                                This is also a highly recommended and often more affordable option for those who don't mind something a bit more self-service.
-                                You can use the following links to start your searches: <a href="https://www.vrbo.com/vacation-rentals/canada/ontario/niagara-on-the-lake?sleeps=2-plus&from-date=2016-07-01&to-date=2016-07-03">VRBO</a>, <a href="https://www.airbnb.com/s/Niagara~on~the~Lake--Canada?checkin=07%2F01%2F2016&checkout=07%2F03%2F2016&guests=2">airbnb</a>.
+                                The <a href="https://www.expedia.com.vn/Hanoi-Khach-San-Golden-Lotus-Luxury-Hotel.h6129645.Thong-tin-khach-san">Golden Lotus Hanoi Hotel</a>
+                                <address>
+                                    <a href="https://goo.gl/maps/SDE1unGWYnM9GLgs9">
+                                        53-55 P. Hàng Trống, Hàng Trống, Hoàn Kiếm, Hà Nội 100000<br>
+                                    </a>
+                                    <br>
+                                    Khách sạn 3.5 sao tọa lạc ở chính giữa Phố Cổ, cách Hồ Hoàn Kiếm 3 phút đi bộ, Quảng trường Đông Kinh Nghĩa Thục 4 phút đi bộ, Nhà thờ Lớn Hà Nội 4 phút đi bộ, Nhà hát Lớn Hà Nội 14 phút đi bộ.<br>
+                                    <br>
+                                    Located at the center of the city, few minute walking from the hictoric Hoàn Kiếm Lake and the Old Quarter.<br>
+                                    <br>
+                                    Phone: +84 243 8255 853
+                                </address>
                             </td>
                         </tr>
                     </table>
+
                     <hr class="primary">
-                    <h3>Things to Do</h3>
-                    <p>There's no shortage of things to do in Niagara! Some ideas are listed below.</p>
-                    <h4>Wine Tasting</h4>
-                    <p>
-                        If you have a designated driver, nothing beats a leisurely afternoon visiting a few of Niagara's beautiful vineyards and tasting the wine.
-                        If no one wants to drive, you can also <a href="http://zoomleisure.com/">rent a bike</a> or <a href="https://www.tripadvisor.com/Attractions-g154999-Activities-c42-t205-Niagara_on_the_Lake_Ontario.html">join a tour</a>.
-                        Follow the Niagara Wine Route.
+                    <h3 id="eat-n-drink">Eat & Drink</h3>
+                    <p>Vietnamese cuisine varies by region. Each city, even each village, has its own list of unique local specialties.
+                        Hanoi is no exception. Many of the popular Vietnamese dishes originated here
                     </p>
-                    <p>
-                        Trius has a fabulous high-end dining area.
-                        Inniskillin is renowned for their ice wine.
-                        For those of you who enjoy more full-bodied wines, Rowena is a fan of the Henry of Pelham Baco Noir Reserve.
-                        Southbrook is Canada’s first biodynamic winery and well known for excellent meals.
+
+                    <section id="eng-pics" class="section-padding">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" title="Cháo sườn sụn (Short rib congee)" href="{% static 'bigday/images/chao-suon-ngon-nhat-ha-noi.jpg' %}">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="{% static 'bigday/images/chao-suon-ngon-nhat-ha-noi.jpg' %}" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" title="Bún thang (Hanoi combo noodle soup)" href="https://tapchicongthuong.vn/images/20/9/25/bun_thang_ha_noi_1.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://tapchicongthuong.vn/images/20/9/25/bun_thang_ha_noi_1.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" title="Cốm Hà Nội (Young rice)" href="https://ximgo.com/upload/files/com%20(2).jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://ximgo.com/upload/files/com%20(2).jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" title="Bún cá (Fried fish noodle)" href="https://cdn.vietnamtours247.com/2020/01/A7D703B7-608B-4024-992D-9B599D782E07.jpeg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://cdn.vietnamtours247.com/2020/01/A7D703B7-608B-4024-992D-9B599D782E07.jpeg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" title="Phở Cuốn (Pho spring roll)" href="https://vcdn-ngoisao.vnecdn.net/2020/03/28/Screen-Shot-2020-03-28-at-12-3-8255-2316-1585333812.png">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://vcdn-ngoisao.vnecdn.net/2020/03/28/Screen-Shot-2020-03-28-at-12-3-8255-2316-1585333812.png" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" title="Ngan cháy tỏi (Garlic fried muscovy duck)" href="https://dulichvietnam.com.vn/vnt_upload/news/11_2020/diem_danh_nhung_quan_ngan_chay_toi_gay_sot_gioi_tre_ha_noi_mua_gio_ve_12.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://dulichvietnam.com.vn/vnt_upload/news/11_2020/diem_danh_nhung_quan_ngan_chay_toi_gay_sot_gioi_tre_ha_noi_mua_gio_ve_12.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row hidden-lg hidden-md hidden-xs">
+                                <div class="col-xs-12 section-border section-padding"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <table class="table table-striped">
+                        <tr style="background-color: #C04000">
+                            <img src="https://kyspeaks.com/photos3/hanoi-2019-family-trip1.jpg" class="img-responsive" style="width: 100%;" alt="">
+                            <th class="col-md-3">Bún chả</th>
+                            <td>
+                                The <a href="https://vietnamnet.vn/quan-bun-cha-obama-thay-doi-the-nao-sau-3-nam-don-cuu-tong-thong-my-510197.html">Bún chả</a>
+                                <address>
+                                    <a href="https://g.page/bunchahuonglienobama?share">
+                                        Bún chả Hương Liên (Bún chả Obama)<br>
+                                        24 Lê Văn Hưu, Phan Chu Trinh, Hai Bà Trưng, Hà Nội<br>
+
+                                    </a>
+                                    <a href="https://goo.gl/maps/BvMJg59jihxTtsRw7">
+                                        Bún Chả Hàng Quạt<br>
+                                        Ngõ 74 Hàng Quạt, Quận Hoàn Kiếm, Hà Nội<br>
+                                    </a>
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-striped">
+                        <tr style="background-color: #C04000">
+                            <img src="https://manhhoach.com/wp-content/uploads/2021/09/pho-ga-do-gia-1024x689.jpg" class="img-responsive" style="width: 100%;" alt="">
+                            <th class="col-md-3">Phở gà Hà Nội</th>
+                            <td>
+                                <address>
+                                    <a href="https://goo.gl/maps/xGDyvw89j9hB3AMB6">
+                                        Huyen Huong Restaurant<br>
+                                        20 P. Báo Khánh, Hàng Trống, Hoàn Kiếm, Hà Nội, Vietnam<br>
+                                    </a>
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-striped">
+                        <tr style="background-color: #C04000">
+                            <img src="https://cdn.jamja.vn/blog/wp-content/uploads/2018/03/bun-dau-mam-tom-hang-khay-1.jpg" class="img-responsive" style="width: 100%;" alt="">
+                            <th class="col-md-3">Bún đậu mắm tôm</th>
+                            <td>
+                                <address>
+                                    <a href="https://goo.gl/maps/yESedaD95yycT1nVA">Bún đậu mắm tôm (Rice vermicelli with fried tofu and shrimp paste)<br>
+                                        Bún Đậu Mắm Tôm Hàng Khay<br>
+                                        31 P. Hàng Khay, Tràng Tiền, Hoàn Kiếm, Hà Nội<br>
+                                    </a>
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-striped">
+                        <tr style="background-color: #C04000">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/25/b6/ed/cha-ca-thang-long.jpg" class="img-responsive" style="width: 100%;" alt="">
+                            <th class="col-md-3">Chả Cá</th>
+                            <td>
+                                <address>
+                                    <a href="https://goo.gl/maps/DK9cu6hf6ER6dyZSA">
+                                        Chả Cá Thăng Long<br>
+                                        6B Đường Thành, Cửa Đông, Hoàn Kiếm, Hà Nội, Vietnam<br>
+                                    </a>
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-striped">
+                        <tr style="background-color: #C04000">
+                            <img src="https://www.vibrantlyvietnam.com/wp-content/uploads/2019/07/goc-ha-noi-coffee-shop-review-ho-chi-minh-city-vietnam-egg-coffee.jpg" class="img-responsive" style="width: 100%;" alt="">
+                            <th class="col-md-3">Cà Phê Trứng</th>
+                            <td>
+                                <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/10-quan-cafe-trung-ha-noi-chuan-vi-nhat-ma-gia-ca-lai-phai-chang-1403710">Cà Phê Trứng<br></a>
+                                <address>
+                                    <a href="https://g.page/cafephoco?share">
+                                        Old Town Cafe<br>
+                                        Cafe Phố Cổ<br>
+                                        11 Hàng Gai, Hàng Trống, Hoàn Kiếm, Hà Nội 10000, Vietnam<br>
+                                    </a>
+                                </address>
+                                <address>
+                                    <a href="https://goo.gl/maps/e1X5r3gcCcGfN6eh6">
+                                        Đinh Café<br>
+                                        13 P. Đinh Tiên Hoàng, Hàng Trống, Hoàn Kiếm, Hà Nội, Vietnam<br>
+                                    </a>
+                                </address>
+                                <address>
+                                    <a href="https://g.page/cafegiang-vn?share">
+                                        Cafe Giảng<br>
+                                        (Home of the original egg coffee)<br>
+                                        39 Nguyễn Hữu Huân, Lý Thái Tổ, Hoàn Kiếm, Hà Nội<br>
+                                    </a>
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr class="primary">
+                    <h3 id="things-to-do">Things to Do</h3>
+                    <p>There's no shortage of things to do in Hanoi! Some ideas are listed below.</p>
+
+                    <section id="eng-pics" class="section-padding">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" title="Chùa Trấn Quốc" href="https://a.cdn-hotels.com/gdcs/production64/d444/5252610b-aea3-4ea6-a76e-1ede20547e94.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://a.cdn-hotels.com/gdcs/production64/d444/5252610b-aea3-4ea6-a76e-1ede20547e94.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" title="Hồ Hoàn Kiếm" href="https://www.vietnamonline.com/media/uploads/froala_editor/images/VNO-hoankiemlake2.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://www.vietnamonline.com/media/uploads/froala_editor/images/VNO-hoankiemlake2.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" title="Hoàng thành Hà Nội" href="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/c5/b7/6b/the-front-of-doan-mon.jpg?w=1200&h=-1&s=1">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/c5/b7/6b/the-front-of-doan-mon.jpg?w=1200&h=-1&s=1" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" title="Nhà hát lớn Hà Nội" href="https://hanoi1000.vn/wp-content/uploads/2019/09/nha-hat-lon.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://hanoi1000.vn/wp-content/uploads/2019/09/nha-hat-lon.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" title="Nhà thờ lớn Hà Nội" href="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/4/6/1031462/IMG_20220406_182335.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/4/6/1031462/IMG_20220406_182335.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://travelholicweb.files.wordpress.com/2016/04/skyline-hanoi.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://travelholicweb.files.wordpress.com/2016/04/skyline-hanoi.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row hidden-lg hidden-md hidden-xs">
+                                <div class="col-xs-12 section-border section-padding"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <img src="https://i1-ngoisao.vnecdn.net/2022/08/29/quan-ca-phe-duong-tau-phung-hung-pho-ca-phe-duong-tau-phung-hung-pho-ca-phe-duong-tau-xom-ca-phe-duong-tau-phung-hung-3-1661754726.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=lnqb_mOy4wqQE5_GuYcYqQ" class="img-responsive" style="width: 100%;" alt="">
+                    <table class="table table-striped">
+                        <tr>
+                            <th class="col-md-3">Railway Café</th>
+                            <td>
+                                The <a href="http://railwaycafe.travel.blog/">Railway Cafe</a>
+                                <address>
+                                    <a href="https://g.page/railwaycafehanoi?share">
+                                        112 chắn tàu, 5 P. Trần Phú, Hoàn Kiếm, Hà Nội 10000<br>
+                                    </a>
+                                    <br>
+                                    Xóm cafe đường tàu Hà Nội xuất hiện từ thời Pháp thuộc. Khi đó, những công nhân trong ngành đường sắt bắt đầu xây dựng nhà bên cạnh hành lang.
+                                    Phố cà phê đường tàu (đoạn đường sắt nối giữa phố Lê Duẩn, Trần Phú, Cửa Đông và Phùng Hưng) trở thành địa điểm thu hút đông du khách trong và ngoài nước đến trải nghiệm cuộc sống của người dân sống hai bên tàu, ngắm cảnh đoàn tàu lướt qua.<br>
+                                    <br>
+                                    Though not being named officially on the administrative map, Hanoi Train Street is marked on every tourist manual.
+                                    Foreign tourists usually crowd the cafes here. Hanging out with friends, having a coffee sip while watching passersby,
+                                    and posing for some vintage-styled photos along the tracks are just something popularly done at this unusual tourist place.
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://cdn-www.vinid.net/0abcdce4-xe-bus-2-tang-ha-noi-4.jpg" class="img-responsive" style="width: 100%; height: 500px" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://vivuhotay.com/wp-content/uploads/2022/08/du-lich-ha-noi-bang-xe-buyt-2-tang4.jpg" class="img-responsive" style="width: 100%; height: 500px" alt="">
+                        </div>
+                    </div>
+                    <table class="table table-striped">
+                        <tr>
+                            <th class="col-md-3">Hop On Hop Off</th>
+                            <td>
+                                The <a href="https://vinid.net/blog/tin-tuc-khac/xe-bus-2-tang-ha-noi/">Hop On Hop Off</a>
+                                <address>
+                                    <a href="https://goo.gl/maps/wLkX4dgyqDiVc8j2A">
+                                        Quảng trường Đông Kinh Nghĩa Thục<br>
+                                        Dong Kinh Nghia Thuc Square
+                                    </a>
+                                    <br>
+                                    Xe bus sẽ lộ trình đi qua 25 tuyến phố và những địa điểm nổi tiếng tại đây như: Văn miểu, Nhà hát Lớn thành phố, bảo tàng lịch sử… và có hơn 10 điểm dừng đón trả khách.
+                                    Mỗi tuyến sẽ cách nhau 30 phút  và tổng hành trình sẽ kéo dài khoảng 90 phút là kết thúc. Giá vé xe cũng sẽ dao động theo từng tuyến khác nhau, nhưng thường giá từ thấp nhất sẽ là 196.000 đồng và cao nhất là 650.000 đồng<br>
+                                    <br>
+                                    Enjoy a unique experience to Hanoi with special combo including Hanoi City Tour Hop On Hop Off 2-hour valid ticket.
+                                    Hanoi City tour Hop on – Hop off has 15 stops going through more than 20 famous attractions, allowing travelers to explore and experience the city in their own way.
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+                    <img src="https://khoanhkhacthanglong.vn/wp-content/uploads/2020/01/ph%E1%BB%91-%C4%91i-b%E1%BB%99-h%C3%A0-n%E1%BB%99i-h%C3%B4m-nay-c%C3%B3-g%C3%AC3.jpg" class="img-responsive" style="width: 100%;" alt="">
+                    <table class="table table-striped">
+                        <tr>
+                            <th class="col-md-3">Phố đi bộ</th>
+                            <td>
+                                The <a href="https://www.vntrip.vn/cam-nang/pho-di-bo-ha-noi-23580">Phố đi bộ (Walking Street)</a>
+                                <address>
+                                    <a href="https://goo.gl/maps/N9E8s6d7ZTisxdDh8">
+                                        Xung quanh hồ Gươm (Hoàn Kiếm, Hà Nội) và Phố Cổ<br>
+                                        Hoan Kiem Lake and Old Quarter
+                                    </a>
+                                    <br>
+                                    Phố đi bộ Hà Nội chính thức hoạt động vào mỗi cuối tuần.
+                                    Thời gian phố đi bộ bắt đầu từ 19 giờ tối thứ sáu đến 24 giờ ngày chủ nhật hàng tuần tại khu vực quanh hồ Hoàn Kiếm và khu phố cổ phụ cận.<br>
+                                    <br>
+                                    Hanoi walking street appeared from September 2016 with 16 streets around Hoan Kiem Lake.
+                                    It was created to become an entertainment area as well as organize events, sports and cultural activities serving locals and tourists.
+                                    Hanoi walking street only starts at weekend, which is from 19:00 hrs every Friday to 24:00 hrs every Sunday.
+                                    This walking street has no strange to local people but not all tourists know it well.
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+                    <img src="https://media1.nguoiduatin.vn/media/nguyen-huu-thang/2020/09/19/stc-35.jpg" class="img-responsive" style="width: 100%;" alt="">
+                    <table class="table table-striped">
+                        <tr>
+                            <th class="col-md-3">Lễ Trung Thu (10/09/22)</th>
+                            <td>
+                                The <a href="https://laodong.vn/photo/ruc-ro-sac-mau-trung-thu-tren-pho-hang-ma-1082851.ldo">Mid-Autumn Street Festival</a>
+                                <address>
+                                    <a href="https://goo.gl/maps/Xw5mh3q4cc5FbpHV8">
+                                        Phố Hàng Mã<br>
+                                    </a>
+                                    <br>
+                                    Tết Trung thu của người Việt còn được gọi là tết Đoàn viên, đây là dịp luôn tràn ngập tiếng cười của người lớn và trẻ thơ cùng sum họp bên gia đình.
+                                    Chính vì vậy ai cũng muốn trang hoàng cho dịp lễ này. Hàng Mã nổi tiếng với các sản phẩm thủ công truyền thống, những cửa hàng bày bán đồ chơi trung thu tạo nên vẻ đẹp rực rỡ sắc màu của con phố này.<br>
+                                    <br>
+                                    With the Mid-Autumn Festival peaking, people have been flooding into Hanoi’s Old Quarter, especially Hang Ma Street, to shop, take photos and enjoy the festive ambience.
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+                    <img src="https://bietthungoctrai.vn/wp-content/uploads/Van-Mieu-Quoc-Tu-Giam-Ha-Noi9-2.jpg" class="img-responsive" style="width: 100%;" alt="">
+                    <table class="table table-striped">
+                        <tr>
+                            <th class="col-md-3">Văn Miếu Quốc Tử Giám</th>
+                            <td>
+                                The <a href="https://www.vntrip.vn/cam-nang/van-mieu-quoc-tu-giam-21829">Văn Miếu Quốc Tử Giám (Temple of Literature)</a>
+                                <address>
+                                    <a href="https://goo.gl/maps/FhhmnijmWdnhoFgK9">
+                                        58 P. Quốc Tử Giám, Văn Miếu, Đống Đa, Hà Nội 100000, Vietnam<br>
+                                    </a>
+                                    <br>
+                                    Văn Miếu được xây dựng năm 1070 dưới thời vua Lý Thánh Tông, là nơi thờ Khổng Tử, Chu Công và Tứ phối.
+                                    Đến năm 1076, vua Lý Nhân Tông cho lập thêm Quốc Tử Giám bên cạnh là trường đại học dành riêng cho con vua và các gia đình quý tộc.
+                                    Đến thời vua Trần Thái Tông, Quốc Tử Giám được đổi tên thành Quốc học viện và thu nhận cả con cái nhà thường dân có sức học xuất sắc.<br>
+                                    Sang thời hậu Lê, đời vua Lê Thánh Tông bắt đầu cho dựng bia của những người thi đỗ tiến sĩ.
+                                    Tới thời Nguyễn, Quốc Tử Giám được lập Huế. Văn miếu Thăng Long được sửa sang lại chỉ còn là Văn Miếu của trấn Bắc Thành, sau đổi thành Văn Miếu Hà Nội.<br>
+                                    Hiện nay, khách du lịch và người dân vào tham quan Văn Miếu phải mua vé vào cổng. Giá vé dành cho người lớn là 20.000đ và vé trẻ em là 10.000đ.<br>
+                                    <br>
+                                    It is one of several temples in Vietnam which is dedicated to Confucius, sages and scholars.
+                                    The temple is located to the south of the Imperial Citadel of Thăng Long.
+                                    The various pavilions, halls, statues and stelae of doctors are places where offering ceremonies, study sessions and the strict exams of the Đại Việt took place.
+                                    The temple is featured on the back of the 100,000 Vitnamese đồng banknote
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-center" id="halong">Hạ Long</h2>
+
+                    <h3>Thăm vịnh Hạ Long tour 8 Tiếng</h3>
+                    <p>Tàu thăm vịnh 8 tiếng
+                        <a href="https://www.viator.com/tours/Hanoi/Halong-Bay-Full-Day-on-Phoenix-Cruise/d351-167655P22?m=28353&supag=68732029897&supca=1939178107&supsc=dsa-650389793948&supai=420120885792&supdv=c&supnt=g&suplp=1028580&supli=&supti=dsa-650389793948&tsem=true&supci=dsa-650389793948&supap1=&supap2=&gclid=CjwKCAjw6raYBhB7EiwABge5Kk-n8wubADO6un8CR8SH4jrhab_iGA2GDeWlFmM5M8hMldkEjIvlTBoCLz4QAvD_BwE">
+                            Vita Mia Luxury Day Cruise Halong Bay.
+                        </a>
+                        Hành trình tàu 8 tiếng tham quan các điểm đến như Hang Sửng Sốt, hang động lớn nhất Vịnh Hạ Long, chèo kayak tại Hang Luồn hay chinh phục đỉnh núi trên đảo Titop nhìn ra toàn cảnh Vịnh Hạ Long.
                     </p>
-                    <h4>Niagara Falls</h4>
-                    <p>A walk around the falls at sunset or at night can be gorgeous. You can also take a ferry through them, though prepare to get wet!</p>
-                    <p>Around Niagara Falls is a thriving industry of haunted houses, a Butterfly Conservatory, Botanical Gardens, and even Niagara Falls Casino.</p>
-                    <h4>Golf</h4>
-                    <p>Plenty of scenic <a href="http://www.notlgolf.com/index.html">golf options</a> around town, many of them using the same grounds for vines as for courses.</p>
-                    <h4>Spa</h4>
-                    <p>Two of the nicest hotels in town host relaxing spas: Secret Garden Spa at Prince of Wales and 100 Fountain Spa at Pillar and Post.</p>
-                    <h4>Shopping</h4>
-                    <p>
-                        There is a long tradition of Americans flocking to Canada for discount shopping and Canadians flocking to America for the same.
-                        In addition to a variety of outlet malls on both sides of the border, Niagara-on-the-Lake town also features a very quaint downtown with lots of unique shops.
-                    </p>
-                    <h4>Theater</h4>
-                    <p>
-                        The Shaw theater festival will be taking place in NOTL this weekend, producing the works of Bernard Shaw and Shavian playwrights.
-                        Theaters are located in NOTL town.
-                    </p>
-                    <h4>Buffalo Wings</h4>
-                    <p>
-                        Probably not worth a dedicated trip, but Buffalo NY is the hometown of buffalo wings.
-                        So if you’re driving through anyways, might be a chance to pay homage.
-                    </p>
-                    <h4>Botanical Gardens</h4>
-                    <p>Some people like flowers. If you’re one of them, <a href="http://www.niagaraparks.com/niagara-falls-attractions/botanical-gardens.html">go here</a>. There’s even a butterfly conservatory.</p>
-                    <h4>Eat</h4>
-                    <p>
-                        Great meals can be found at <a href="http://www.thegarrisonhouse.ca/#!home/mainPage">Garrison House</a>, <a href="http://www.treadwellcuisine.com/">Treadwell</a>, and <a href="http://backhouse.xyz/">Backhouse</a>.
-                        <a href="http://www.twosistersvineyards.com/site/kitchen-76">Kitchen 72</a> inside the Two Sisters Vineyard serves delicious Italian food inside of an impressive estate.
-                    </p>
-                    <h4>Drink</h4>
-                    <p><a href="http://www.silversmithbrewing.com/">Silversmith Brewing</a> is an excellent local artisanal brewery offering offbeat new drinks.</p>
-                    <p>Some informal later-night options include The Olde Angel Inn, Sandtrap, and the Irish Harp.</p>
-                    <h4>Celebrate Canada Day!</h4>
-                    <p>
-                        On Friday night, July 1st, from the Southern banks of Lake Ontario on the north side of NOTL town, you will be able to see the fireworks light up across Toronto, Hamilton, and Niagara.
-                    </p>
-                    <h4>Celebrate America Day!</h4>
-                    <p>God knows what those Americans do. Have a BBQ?</p>
+
+                    <section id="eng-pics" class="section-padding">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://onevivu.vn/wp-content/uploads/2021/12/Du-thuyen-Stella-Maris-13.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://onevivu.vn/wp-content/uploads/2021/12/Du-thuyen-Stella-Maris-13.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://onevivu.vn/wp-content/uploads/2021/12/Ha-Long-1-ngay-Lacasta-Daily-1.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://onevivu.vn/wp-content/uploads/2021/12/Ha-Long-1-ngay-Lacasta-Daily-1.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://d13jio720g7qcs.cloudfront.net/images/cruises/origin/6269133fd9f5a.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://d13jio720g7qcs.cloudfront.net/images/cruises/origin/6269133fd9f5a.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://www.wyndhamhalong.com/uploads/blog/2017/Thang_1/hang-sung-sot-ha-long.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://www.wyndhamhalong.com/uploads/blog/2017/Thang_1/hang-sung-sot-ha-long.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://owa.bestprice.vn/images/articles/uploads/trai-nghiem-hanh-trinh-8-tieng-tren-du-thuyen-ha-long-1-ngay-6242905941e6b.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://owa.bestprice.vn/images/articles/uploads/trai-nghiem-hanh-trinh-8-tieng-tren-du-thuyen-ha-long-1-ngay-6242905941e6b.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://baogialai.com.vn/dataimages/202108/original/images3066502_1dl.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://baogialai.com.vn/dataimages/202108/original/images3066502_1dl.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row hidden-lg hidden-md hidden-xs">
+                                <div class="col-xs-12 section-border section-padding"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <h3>Lịch trình (Cruise Itinerary)</h3>
+                    <p>Tuần Châu – Hang Sửng Sốt – Hang Luồn – Đảo Titop</p>
+                    <table class="table table-striped">
+                        <tr>
+                            <th class="col-md-3">6:30</th>
+                            <td>
+                                Xe đón tại khách sạn Golden Lotus Hanoi Hotel
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="col-md-3">09:00</th>
+                            <td>
+                                 Đến Cảng Tuần Châu. Làm thủ tục lên tàu và tàu rời bến Tuần Châu.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="col-md-3">09:30</th>
+                            <td>
+                                Thưởng thức đồ uống chào mừng (welcome drink).
+                                Chiêm ngưỡng vịnh Hạ Long với hàng ngàn hòn đảo đá vôi lớn nhỏ: Hòn Chó đá, Hòn Vịt đá và đặc biệt là Hòn Ngón tay - một hòn đảo đá vôi mọc lên từ nước biển trong hình dạng của một ngón tay cái khổng lồ.
+                                Tại đây tàu sẽ di chuyển chậm để có thể chụp ảnh.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="col-md-3">11:30</th>
+                            <td>
+                                Ăn trưa Buffet hải sản tươi ngon cao cấp nổi tiếng của Quảng Ninh cũng như các món ăn truyền thống của Việt Nam.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="col-md-3">13:00</th>
+                            <td>
+                                Tham quan hang động đẹp nhất vịnh Hạ Long – hang Sửng Sốt. Đường lên hang Sửng Sốt đi qua những bậc đá, cao tới vài trăm bậc. Du khách vừa được trải nghiệm của người leo núi, vừa được khám phá cảnh đẹp Hùng Vĩ của Vịnh Hạ Long từ trên cao.
+                                (Với du khách không tham hang Sửng Sốt có thể ngồi tại tàu thưởng thức đồ uống ngắm cảnh vịnh).
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="col-md-3">14:00</th>
+                            <td>
+                                Tới khu vực Hang Luồn, chèo kayak/thuyền nan hoặc nghỉ ngơi trên tàu ngắm cảnh.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="col-md-3">15:00</th>
+                            <td>
+                                Sau khi trải nghiệm thăm hang, chèo kayak, qua bãi tắm khu vực Titov để tắm biển với bãi cát trắng.
+                                Đảo Titov là nơi có thể bơi lội hay tắm nắng trên bãi cát trắng mịn hoặc cũng có thể leo lên đỉnh Titov để ngắm toàn cảnh vịnh Halong với hàng ngàn mỏm núi đã vôi nhô lên từ mặt nước xanh biếc.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="col-md-3">16:00</th>
+                            <td>
+                               Trở lại tàu thưởng thức tiệc trà chiều, nhâm nhi tách trà hoặc cà phê truyền thống của Việt Nam cùng snack và trái cây tươi trên sundeck tầng 3, ngắm cả hoàng hôn trên vịnh.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="col-md-3">17:30</th>
+                            <td>
+                                Tàu về tới cảng Tuần Châu. Kết thúc hải trình 8 tiếng khám phá Vịnh Hạ Long.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="col-md-3">20:00</th>
+                            <td>
+                                Xe đưa về khách sạn Golden Lotus Hanoi Hotel
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
         {% endblock %}
+    {% endblock %}
     </html>
 </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="static/fancybox-youtube-player/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="{% static 'fancybox-youtube-player/js/jquery.fancybox.pack.js' %}"></script>
+
+<script src="{% static 'fancybox-youtube-player/js/vendor/bootstrap.min.js' %}"></script>
+<script src="{% static 'fancybox-youtube-player/js/jquery.flexslider-min.js' %}"></script>
+<script src="{% static 'fancybox-youtube-player/js/jquery.mb.YTPlayer.min.js' %}"></script>
+<script src="{% static 'fancybox-youtube-player/node_modules/waypoints/lib/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'fancybox-youtube-player/js/vendor/ouical.js' %}"></script>
+<script src="{% static 'fancybox-youtube-player/js/scripts.min.js' %}"></script>

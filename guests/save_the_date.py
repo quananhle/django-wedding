@@ -20,17 +20,24 @@ SAVE_THE_DATE_CONTEXT_MAP = {
             'main_color': '#fff3e8',
             'font_color': '#ff0000'
         },
-        'chicago': {
-            'title': 'Chicago - Illinois',
-            'header_filename': 'couple.png',
-            'main_image': 'Chicago-IL.jpg',
-            'main_color': '#fff3e8',
-            'font_color': '#ff0000'
-        },
-        'colorado-springs': {
-            'title': 'Colorado Springs - Colorado',
-            'header_filename': 'double-happiness.png',
-            'main_image': 'ColoradoSprings-CO.jpg',
+        # 'chicago': {
+        #     'title': 'Chicago - Illinois',
+        #     'header_filename': 'couple.png',
+        #     'main_image': 'Chicago-IL.jpg',
+        #     'main_color': '#fff3e8',
+        #     'font_color': '#ff0000'
+        # },
+        # 'colorado-springs': {
+        #     'title': 'Colorado Springs - Colorado',
+        #     'header_filename': 'double-happiness.png',
+        #     'main_image': 'ColoradoSprings-CO.jpg',
+        #     'main_color': '#fff3e8',
+        #     'font_color': '#ff0000'
+        # },
+        'nyc': {
+            'title': "Manhattan - New York",
+            'header_filename': 'american-flag.png',
+            'main_image': 'Manhattan-NY.jpg',
             'main_color': '#fff3e8',
             'font_color': '#ff0000'
         },
@@ -38,13 +45,6 @@ SAVE_THE_DATE_CONTEXT_MAP = {
             'title': 'Tampa - Florida',
             'header_filename': 'wine.png',
             'main_image': 'Tampa-FL.jpg',
-            'main_color': '#fff3e8',
-            'font_color': '#ff0000'
-        },
-        'nyc': {
-            'title': "Manhattan - New York",
-            'header_filename': 'american-flag.png',
-            'main_image': 'Manhattan-NY.jpg',
             'main_color': '#fff3e8',
             'font_color': '#ff0000'
         },
@@ -82,7 +82,7 @@ SAVE_THE_DATE_CONTEXT_MAP = {
             'main_image': 'BigSur-CA.jpg',
             'main_color': '#fff3e8',
             'font_color': '#ff0000'
-        },
+        }
         # 'new-orleans': {
         #     'title': 'New Orleans - Louisiana',
         #     'header_filename': 'wedding-arch.png',
@@ -104,13 +104,13 @@ SAVE_THE_DATE_CONTEXT_MAP = {
         #     'main_color': '#fff3e8',
         #     'font_color': '#ff0000'
         # }
-        'boston': {
-            'title': 'Stoneham - Massachussetts',
-            'header_filename': 'wedding-arch.png',
-            'main_image': 'Boston-MA.jpg',
-            'main_color': '#fff3e8',
-            'font_color': '#ff0000'
-        }
+        # 'boston': {
+        #     'title': 'Stoneham - Massachussetts',
+        #     'header_filename': 'wedding-arch.png',
+        #     'main_image': 'Boston-MA.jpg',
+        #     'main_color': '#fff3e8',
+        #     'font_color': '#ff0000'
+        # }
     }
 
 

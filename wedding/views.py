@@ -1,11 +1,9 @@
-from tempfile import tempdir
 from django.conf import settings
 from django.shortcuts import render
 from guests.save_the_date import SAVE_THE_DATE_CONTEXT_MAP
 from django.views import View
-from django.contrib.auth.mixins import LoginRequiredMixin
 
-class Home(LoginRequiredMixin, View):
+class Home(View):
     template = 'home.html'
     def get(self, *args, **kwargs):
         context={
@@ -20,13 +18,30 @@ class Home(LoginRequiredMixin, View):
 
 def hanoi(request):
     template = 'hanoi.html'
-    if request.method == 'GET':     
+    if request.method == 'GET':
+        context = {}
+        return render(request, template, context)
+
+def cantho(request):
+    template = 'cantho.html'
+    if request.method == 'GET':
         context = {}
         return render(request, template, context)
 
 def engagement(request):
     template = 'partials/engagement.html'
-    if request.method == 'GET':     
+    if request.method == 'GET':
         context = {}
         return render(request, template, context)
-        
+
+def wedding(request):
+    template = 'partials/wedding-party.html'
+    if request.method == 'GET':
+        context = {}
+        return render(request, template, context)
+
+def save_the_date(request):
+    template = 'partials/misc.html'
+    if request.method == 'GET':
+        context = {}
+        return render(request, template, context)

@@ -1,0 +1,349 @@
+{% load static %}
+<!doctype html>
+<section id="cantho" style="background-color: #f7f0e5;">
+    <!--[if lt IE 7]>
+    <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+    <!--[if IE 7]>
+    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+    <!--[if IE 8]>
+    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <html class="no-js" lang="en"> <!--<![endif]-->
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <title>Quan & Thu's big day!</title>
+            <meta name="description" content="We would like to invite you to our big day.">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="theme-color" content="#ffffff">
+            <meta property="og:title" content="Quan & Thu's big day">
+            <meta property="og:description" content="We would like to invite you to our big day.">
+            <meta property="og:type" content="website">
+            <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
+            <!-- <link rel="manifest" href="manifest.json"> -->
+            <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/css/normalize.min.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/css/bootstrap.min.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/css/jquery.fancybox.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/css/flexslider.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/css/styles.min.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/css/queries.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/node_modules/animate.css/animate.min.css' %}">
+            <link rel="stylesheet" href="{% static 'fancybox-youtube-player/node_modules/font-awesome/css/font-awesome.min.css' %}">
+            <script src="{% static 'fancybox-youtube-player/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+        </head>
+    {% block page_content %}
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top"  style="background-color: darkslategray">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="{% url 'home' %}" style="color: gold;">Quan & Thu's Big Day</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li>
+                            <a class="page-scroll" href="{% url 'home' %}" style="color: white;">Home</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#where-to-stay" style="color: white;">Where To Stay</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#eat-n-drink" style="color: white;">Eat and Drink</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#things-to-do" style="color: white;">Things To Do</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#angiang" style="color: white;">An Giang</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br><br>
+        {% block main %}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-center">Cần Thơ</h2>
+
+                    <img src="https://i-english.vnecdn.net/2020/01/10/shutterstock632565119-15786447-9372-8657-1578644902_680x0.jpg" class="img-responsive" style="width: 100%;" alt="">
+                    <!-- <hr class="primary">
+                    <h3>Getting There and Away</h3>
+                    <p>We have booked a 29 seat shuttle bus to transport our group from and to the airport.</p>
+                    <hr class="primary"> -->
+                    <h3 id="where-to-stay">Where to Stay</h3>
+
+                    <table class="table table-striped">
+                        <tr>
+                            <th class="col-md-3">Khách sạn Mường Thanh Luxury Cần Thơ</th>
+                            <td>
+                                The <a href="http://luxurycantho.muongthanh.com/">Muong Thanh Luxury Can Tho</a>
+                                <address>
+                                    <a href="https://goo.gl/maps/SDE1unGWYnM9GLgs9">
+                                        Khu E1, cồn, Ninh Kiều, Cần Thơ 900000<br>
+                                    </a>
+                                    <br>
+                                    Khách sạn Mường Thanh Cần Thơ (Muong Thanh Can Tho) tọa lạc tại vị trí đắc địa trước vòng xoay Cồn Cái Khế,
+                                    bên cạnh con sông Cần Thơ gần khu vực trung tâm thành phố. Khách sạn cách sân bay quốc tế Cần Thơ khoảng 12 km,
+                                    cách bến xe trung tâm Cần Thơ khoảng 3 km, cách Bến Ninh Kiều khoảng 700 m và tầm 7 km để đến Chợ nổi Cái Răng.<br>
+                                    <br>
+                                    Conveniently situated in the Cai Khe part of Can Tho, this property puts you close to attractions and interesting dining options.
+                                    Be sure to set some time aside to visit Binh Thuy Communal House as well as Can Tho Beach nearby.
+                                    Rated with 5 stars, this high-quality property provides guests with access to massage, restaurant and fitness center on-site.<br>
+                                    <br>
+                                    Phone: +84 2923 688 888
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr class="primary">
+                    <h3 id="eat-n-drink">Eat & Drink</h3>
+                    <p>Vietnamese cuisine varies by region. Each city, even each village, has its own list of unique local specialties.
+                        Can Tho is no exception. Many of the popular Vietnamese dishes originated here
+                    </p>
+
+                    <section id="eng-pics" class="section-padding">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="http://vietnamflavor.com/wp-content/uploads/2015/05/vietnam-flavor-cantho-food-nem-nuong-cai-rang.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="http://vietnamflavor.com/wp-content/uploads/2015/05/vietnam-flavor-cantho-food-nem-nuong-cai-rang.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://www.tnktravel.com/wp-content/uploads/2016/08/Can-Tho-7.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://www.tnktravel.com/wp-content/uploads/2016/08/Can-Tho-7.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://admin.begodi.vn/web/image/61120/Begodi-cuisine-can-tho-banh-xeo-vietnamese-pancake.jpg?access_token=86c0e76f-8347-4c43-88ad-715fd4860cb5">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://admin.begodi.vn/web/image/61120/Begodi-cuisine-can-tho-banh-xeo-vietnamese-pancake.jpg?access_token=86c0e76f-8347-4c43-88ad-715fd4860cb5" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://admin.begodi.vn/web/image/61119/Begodi-cuisine-can-tho-hu-tieu-Noodle-soup.jpg?access_token=1684fe05-b5be-4ab0-b46a-087b2f26fd7b">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://admin.begodi.vn/web/image/61119/Begodi-cuisine-can-tho-hu-tieu-Noodle-soup.jpg?access_token=1684fe05-b5be-4ab0-b46a-087b2f26fd7b" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://tourismcantho.vn/files/images/cuisine/c2.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://tourismcantho.vn/files/images/cuisine/c2.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://tourismcantho.vn/files/images/cuisine/2%20Viet-Nam-Cuisines-Street-Food-In-Can-Tho1.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://tourismcantho.vn/files/images/cuisine/2%20Viet-Nam-Cuisines-Street-Food-In-Can-Tho1.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row hidden-lg hidden-md hidden-xs">
+                                <div class="col-xs-12 section-border section-padding"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <table class="table table-striped">
+                        <tr>
+                            <img src="https://vietnamdiscovery.com/wp-content/uploads/2021/09/banh-xeo-best-dishes-in-mekong-delta@annie_vnkitchen.jpg" class="img-responsive" style="width: 100%;" alt="">
+                            <th class="col-md-3">Bánh xèo</th>
+                            <td>
+                                The <a href="">Bánh xèo</a>
+                                <address>
+                                    <!-- <a href="https://g.page/bunchahuonglienobama?share">
+                                        Bún chả Hương Liên (Bún chả Obama)<br>
+                                        24 Lê Văn Hưu, Phan Chu Trinh, Hai Bà Trưng, Hà Nội<br>
+                                    </a> -->
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-striped">
+                        <tr>
+                            <img src="https://lukitchen.com/wp-content/uploads/2020/07/banh-hoi-heo-quay.jpg" class="img-responsive" style="width: 100%;" alt="">
+                            <th class="col-md-3">Bánh Hỏi Thịt Quay</th>
+                            <td>
+                                <address>
+                                    <!-- <a href="https://goo.gl/maps/xGDyvw89j9hB3AMB6">
+                                        Huyen Huong Restaurant<br>
+                                        20 P. Báo Khánh, Hàng Trống, Hoàn Kiếm, Hà Nội, Vietnam<br>
+                                    </a> -->
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-striped">
+                        <img src="https://toplistcantho.com/wp-content/uploads/2020/07/quan-hu-tieu-ngon-o-can-tho8.jpg" class="img-responsive" style="width: 100%;" alt="">
+                        <tr>
+                            <th class="col-md-3">Hủ Tiếu</th>
+                            <td>
+                                <address>
+                                    <!-- <a href="https://goo.gl/maps/DK9cu6hf6ER6dyZSA">
+                                        Chả Cá Thăng Long<br>
+                                        6B Đường Thành, Cửa Đông, Hoàn Kiếm, Hà Nội, Vietnam<br>
+                                    </a> -->
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr class="primary">
+                    <h3 id="things-to-do">Things to Do</h3>
+                    <p>There's no shortage of things to do in Cantho! Some ideas are listed below.</p>
+
+                    <img src="https://media.baodautu.vn/Images/phuongthanh/2021/06/07/6.jpg" class="img-responsive" style="width: 100%;" alt="">
+                    <table class="table table-striped">
+                        <tr>
+                            <th class="col-md-3">Chợ nổi Cái Răng</th>
+                            <td>
+                                The <a href="http://railwaycafe.travel.blog/">Chợ nổi Cái Răng</a>
+                                <address>
+                                    <!-- <a href="https://g.page/railwaycafehanoi?share">
+                                        112 chắn tàu, 5 P. Trần Phú, Hoàn Kiếm, Hà Nội 10000<br>
+                                    </a>
+                                    <br>
+                                    Xóm cafe đường tàu Hà Nội xuất hiện từ thời Pháp thuộc. Khi đó, những công nhân trong ngành đường sắt bắt đầu xây dựng nhà bên cạnh hành lang.
+                                    Phố cà phê đường tàu (đoạn đường sắt nối giữa phố Lê Duẩn, Trần Phú, Cửa Đông và Phùng Hưng) trở thành địa điểm thu hút đông du khách trong và ngoài nước đến trải nghiệm cuộc sống của người dân sống hai bên tàu, ngắm cảnh đoàn tàu lướt qua.<br>
+                                    <br>
+                                    Though not being named officially on the administrative map, Hanoi Train Street is marked on every tourist manual.
+                                    Foreign tourists usually crowd the cafes here. Hanging out with friends, having a coffee sip while watching passersby,
+                                    and posing for some vintage-styled photos along the tracks are just something popularly done at this unusual tourist place. -->
+                                </address>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-center" id="angiang">Núi Cấm, An Giang</h2>
+                    <section id="eng-pics" class="section-padding">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://mientaycogi.com/wp-content/uploads/2020/10/toan-canh-nui-cam-an-giang-nhin-tu-tren-cao.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://mientaycogi.com/wp-content/uploads/2020/10/toan-canh-nui-cam-an-giang-nhin-tu-tren-cao.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://thamhiemmekong.com/wp-content/uploads/2019/09/nui-cam01.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://thamhiemmekong.com/wp-content/uploads/2019/09/nui-cam01.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://lamviennuicam.com/wp-content/uploads/2020/04/chau-doc-_1.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://lamviennuicam.com/wp-content/uploads/2020/04/chau-doc-_1.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://image.vietgoing.com/editor/image_ssy1622711508.jpg.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://image.vietgoing.com/editor/image_ssy1622711508.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://dulichvietnam.com.vn/kinh-nghiem/wp-content/uploads/2019/09/kinh-nghiem-du-lich-chau-doc-3.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://dulichvietnam.com.vn/kinh-nghiem/wp-content/uploads/2019/09/kinh-nghiem-du-lich-chau-doc-3.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="fancybox" rel="group" href="https://vietair.com.vn/Media/Images/gioi-thieu-chau-doc-an-giang.jpg">
+                                        <div class="img-wrap">
+                                            <div class="overlay">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <img src="https://vietair.com.vn/Media/Images/gioi-thieu-chau-doc-an-giang.jpg" alt=""/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row hidden-lg hidden-md hidden-xs">
+                                <div class="col-xs-12 section-border section-padding"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+    {% endblock %}
+    </html>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="static/fancybox-youtube-player/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="{% static 'fancybox-youtube-player/js/jquery.fancybox.pack.js' %}"></script>
+
+<script src="{% static 'fancybox-youtube-player/js/vendor/bootstrap.min.js' %}"></script>
+<script src="{% static 'fancybox-youtube-player/js/jquery.flexslider-min.js' %}"></script>
+<script src="{% static 'fancybox-youtube-player/js/jquery.mb.YTPlayer.min.js' %}"></script>
+<script src="{% static 'fancybox-youtube-player/node_modules/waypoints/lib/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'fancybox-youtube-player/js/vendor/ouical.js' %}"></script>
+<script src="{% static 'fancybox-youtube-player/js/scripts.min.js' %}"></script>

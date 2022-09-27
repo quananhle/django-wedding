@@ -55,9 +55,9 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>We did it!!</h1>
-                <a href="#welcome" class="btn btn-info btn-xl page-scroll">Welcome</a>
-                <a href="#engagement-event" class="btn btn-primary btn-xl page-scroll">Saturday 09/03/2022</a>
-                <a href="#wedding-event" class="btn btn-success btn-xl page-scroll">Saturday 09/10/2022</a>
+                <!--<a href="#welcome" class="btn btn-info btn-xl page-scroll">Welcome</a>-->
+                <!--<a href="#engagement-event" class="btn btn-primary btn-xl page-scroll">Saturday 09/03/2022</a>-->
+                <!--<a href="#wedding-event" class="btn btn-success btn-xl page-scroll">Saturday 09/10/2022</a>-->
                 {% comment %}
                 <hr>
                 <h2>It's wedding week!</h2>
@@ -76,11 +76,15 @@
                     <h2 class="section-heading">Welcome!</h2>
                     <hr>
                     <p>
-                        Hello friends and family! It's the week of the wedding!
+                        Hello friends and family! It's the week of the wedding!<br>
+                        Xin chào các cô chú bác anh chị và các bạn!<br> Cảm ơn mọi người đã ghé vào trang web của Quân và Thư.
                     </p>
                     <p>
                         If you're looking for information about the event, look no further!<br>
                         Please see below for all the details regarding <br><a href="#engagement-event" class="page-scroll" style="color: yellow;">Saturday 09/03/22's Engegament Ceremony</a> & <a href="#wedding-event" class="page-scroll" style="color: yellow;">Saturday 09/10/22's Wedding Ceremony</a>.
+                    </p>
+                    <p>
+                        Dưới đây là thông tin chi tiết về <a href="#engagement-event" class="page-scroll" style="color: yellow;">lễ ăn hỏi ngày thứ 7 03/09/2022 ở Cần Thơ, Việt Nam</a><br> & <a href="#wedding-event" class="page-scroll" style="color: yellow;">lễ cưới ngày thứ 7 10/09/2022 ở Hà Nội, Việt Nam</a>.
                     </p>
                     <!-- <p>
                         To get added to the wedding whatsapp group first create an account and then send an
@@ -89,8 +93,9 @@
                     </p> -->
                     <p>
                         Looking forward to seeing everyone soon!
+                        Rất mong nhận được sự chúc phúc của mọi người. Sự có mặt của các cô chú bác anh chị và các bạn là niềm vinh dự của 2 chúng tôi.
                     </p>
-                    <p class="pull-right">- Quan and Thu</p>
+                    <p class="pull-right">- Quân & Thư</p>
                 </div>
             </div>
         </div>
@@ -100,39 +105,39 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#third-header" class="portfolio-box page-scroll">
+                    <a href="#story" class="portfolio-box page-scroll">
                         <img src="{% static 'bigday/images/Portland-ME.jpg' %}" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Our Journey
-                                </div>
-                            </div>
-                        </div>
+                        <!--<div class="portfolio-box-caption">-->
+                        <!--    <div class="portfolio-box-caption-content">-->
+                        <!--        <div class="project-name">-->
+                        <!--            Our Journey-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--</div>-->
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#third-header" class="portfolio-box page-scroll">
+                        <img src="{% static 'bigday/images/Presidents-1-SD.jpg' %}" class="img-responsive" alt="">
+                        <!--<div class="portfolio-box-caption">-->
+                        <!--    <div class="portfolio-box-caption-content">-->
+                        <!--        <div class="project-name">-->
+                        <!--            The Proposal-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--</div>-->
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#second-header" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/Presidents-1-SD.jpg' %}" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    The Proposal
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#story" class="portfolio-box page-scroll">
                         <img src="{% static 'bigday/images/Springs-TX.jpg' %}" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Our Story
-                                </div>
-                            </div>
-                        </div>
+                        <!--<div class="portfolio-box-caption">-->
+                        <!--    <div class="portfolio-box-caption-content">-->
+                        <!--        <div class="project-name">-->
+                        <!--            Our Story-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--</div>-->
                     </a>
                 </div>
             </div>
@@ -151,7 +156,7 @@
     {% include 'partials/wedding-party.html' %}
     {% endcomment %}
 
-    {% include 'partials/journey.html' %}    
+    {% include 'partials/journey.html' %}
 
     <img src="{% static 'bigday/images/US-Map.png' %}" class="img-responsive" style="width: 100%;" alt="">
     {% comment %}
@@ -190,7 +195,7 @@
     <script src="{% static 'creative/js/creative.js' %}"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-    <script src="static/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script src="{% static 'bootstrap-3.3.6-dist/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'bigday/node_modules/waypoints/lib/jquery.waypoints.min.js' %}"></script>
     <!-- <script src="{% static 'bigday/js/vendor/ouical.js' %}"></script> -->
     <!-- <script src="{% static 'bigday/js/jquery-1.4.3.min.js' %}" type="text/javascript" ></script> -->
