@@ -45,25 +45,9 @@ def wedding(request):
     if request.method == 'GET':
         context = {}
         return render(request, template, context)
-<<<<<<< HEAD
 
 def save_the_date(request):
     template = 'partials/misc.html'
     if request.method == 'GET':
         context = {}
         return render(request, template, context)
-=======
-        
-
-def wedding(request):
-    template = 'partials/wedding-party.html'
-    if request.method == 'GET':     
-        context = {}
-        return render(request, template, context)
-                
-def save_the_date(request):
-    template = 'partials/misc.html'
-    if request.method == 'GET':     
-        context = {}
-        return render(request, template, context)                
->>>>>>> 436d9c1349dbbee200c9d5eb38d58275c4d1292f
