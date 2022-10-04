@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u7!-y4k1c6b44q507nr_l+c^12o7ur++cpzyn!$65w^!gum@h%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['quanthu.pythonanywhere.com','www.quan-thu.com','127.0.0.1']
 
@@ -120,11 +120,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0.6/howto/static-files/
 
-STATIC_ROOT = 'static_root'
+# STATIC_ROOT = 'static_root'
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = (
+#     os.path.join('bigday', 'static'),
+# )
+
+# STATIC_ROOT = 'static'
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join('bigday', 'static'),
-)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 # This is used in a few places where the names of the couple are used
 BRIDE_AND_GROOM = 'Quan & Thu'
