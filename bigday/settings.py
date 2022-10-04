@@ -120,17 +120,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0.6/howto/static-files/
 
-# STATIC_ROOT = 'static_root'
-# STATIC_URL = '/static/'
-# STATICFILES_DIRS = (
-#     os.path.join('bigday', 'static'),
-# )
+STATIC_ROOT = 'static'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join('bigday', 'static'),
+)
 
 # STATIC_ROOT = 'static'
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),
+# ]
 
 # This is used in a few places where the names of the couple are used
 BRIDE_AND_GROOM = 'Quan & Thu'
