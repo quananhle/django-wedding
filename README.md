@@ -52,4 +52,4 @@ https://help.pythonanywhere.com/pages/HTTPSSetup
 Forcing HTTPS
 https://help.pythonanywhere.com/pages/ForcingHTTPS
 
-<img align="right" width="75" height="20" src="https://visitor-badge.glitch.me/badge?page_id=quananhle.quananhle0">
+<img align="right" width="75" height="20" src="https://visitor-badge.glitch.me/badge?page_id=quananhle.django-wedding">
